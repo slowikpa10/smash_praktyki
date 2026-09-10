@@ -1,0 +1,29 @@
+Logging:
+    default: INFO
+
+General:
+    Modus:          Collider
+    Time_Step_Mode: Fixed
+    Delta_Time:     0.1
+    End_Time:       200.0
+    Randomseed:     -1
+    Nevents:        100
+
+Output:
+    Output_Interval: 10.0
+    Particles:
+        Format:          ["Oscar2013"]
+
+Modi:
+    Collider:
+        Projectile:
+            Particles: {2212: 18, 2112: 22} #Argon40
+        Target:
+            Particles: {2212: 21, 2112: 24} #Skand45
+
+        Sqrtsnn: 11.9
+        Fermi_Motion: "on"
+        Collisions_Within_Nucleus: True
+        Impact:
+            Sample: "quadratic"
+            Range: [0.0, 2.31]
